@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script src="https://kit.fontawesome.com/2f9657d5eb.js" crossorigin="anonymous"></script>
+  <title>Notes App</title>
+</head>
+
+<body>
+  <div class="bg-gray-100 dark:bg-gray-900 dark:text-white text-gray-600 h-screen flex overflow-hidden text-sm">
+    <div
+      class="bg-white dark:bg-gray-900 dark:border-gray-800 w-20 flex-shrink-0 border-r border-gray-200 flex-col hidden sm:flex">
+      <div class="h-16 text-blue-500 flex items-center justify-center">
+        <img class="w-9 rounded-lg"
+          src="https://static.vecteezy.com/system/resources/previews/025/729/946/original/note-taking-app-icon-in-illustration-vector.jpg"
+          alt="Notes">
+
+      </div>
+      <p>Lets Note It</p>
+      <div class="flex mx-auto flex-grow mt-4 flex-col text-gray-400 space-y-4">
+        <button class="h-10 w-12 dark:text-gray-500 rounded-md flex items-center justify-center">
+          <svg viewBox="0 0 24 24" class="h-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+        </button>
+        <button
+          class="h-10 w-12 dark:bg-gray-700 dark:text-white rounded-md flex items-center justify-center bg-blue-100 text-blue-500">
+          <svg viewBox="0 0 24 24" class="h-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+        </button>
+        <button class="h-10 w-12 dark:text-gray-500 rounded-md flex items-center justify-center">
+          <svg viewBox="0 0 24 24" class="h-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            <line x1="12" y1="11" x2="12" y2="17"></line>
+            <line x1="9" y1="14" x2="15" y2="14"></line>
+          </svg>
+        </button>
+        <button class="h-10 w-12 dark:text-gray-500 rounded-md flex items-center justify-center">
+          <svg viewBox="0 0 24 24" class="h-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="flex-grow overflow-hidden h-full flex flex-col">
+      <div class="h-16 lg:flex w-full border-b border-gray-200 dark:border-gray-800 hidden px-10">
+        <div class="flex h-full text-gray-600 dark:text-gray-400">
+          <a href="#" class="cursor-pointer h-full border-b-2 border-transparent inline-flex items-center mr-8">Do</a>
+          <a href="#"
+            class="cursor-pointer h-full border-b-2 border-blue-500 text-blue-500 dark:text-white dark:border-white inline-flex mr-8 items-center">Delegate</a>
+          <a href="#"
+            class="cursor-pointer h-full border-b-2 border-transparent inline-flex items-center mr-8">Schedule</a>
+          <a href="#" class="cursor-pointer h-full border-b-2 border-transparent inline-flex items-center">Delete</a>
+        </div>
+        <div class="ml-auto flex items-center space-x-7">
+
+
+
+        </div>
+      </div>
+      <div class="flex-grow flex overflow-x-hidden">
+        <div
+          class="xl:w-72 w-48 flex-shrink-0 border-r border-gray-200 dark:border-gray-800 h-full overflow-y-auto lg:block hidden p-5">
+          <div class="text-xs text-gray-400 tracking-wider">NOTES</div>
+          <div class="relative mt-2">
+            <input type="text"
+              class="pl-8 h-9 bg-transparent border border-gray-300 dark:border-gray-700 dark:text-white w-full rounded-md text-sm"
+              placeholder="Search" />
+            <svg viewBox="0 0 24 24"
+              class="w-4 absolute text-gray-400 top-1/2 transform translate-x-0.5 -translate-y-1/2 left-2"
+              stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+
+          <div
+            class="p-3 flex xl:flex-row flex-col items-center font-medium text-gray-900 dark:text-white pb-2 mb-2 xl:border-b border-gray-200 border-opacity-75 dark:border-gray-700 w-full">
+
+            <button id="addNote" class=" hover:bg-slate-400 hover:cursor-pointer"> + Add New note</button>
+          </div>
+
+          <div class="space-y-4 mt-3">
+            <button class="bg-white p-3 w-full flex flex-col rounded-md dark:bg-gray-800 shadow">
+              <div
+                class="flex xl:flex-row flex-col items-center font-medium text-gray-900 dark:text-white pb-2 mb-2 xl:border-b border-gray-200 border-opacity-75 dark:border-gray-700 w-full">
+
+                New note
+              </div>
+              <div class="flex items-center w-full">
+                <div class="text-xs py-1 px-2 leading-none dark:bg-gray-900 bg-blue-100 text-blue-500 rounded-md">
+                  Preview</div>
+                <div class="ml-auto text-xs text-gray-500">Date</div>
+              </div>
+            </button>
+
+
+
+
+          </div>
+        </div>
+        <div class="flex-grow bg-white dark:bg-gray-900 overflow-y-auto">
+          <div
+            class="sm:px-7 sm:pt-7 px-4 pt-4 flex flex-col w-full border-b border-gray-200 bg-white dark:bg-gray-900 dark:text-white dark:border-gray-800 sticky top-0">
+            <div class="flex w-full items-center">
+
+              <div class="ml-auto sm:flex hidden items-center justify-end">
+                <div class="text-right">
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="sm:p-7 p-4">
+            <div id="noteContainer" class="flex w-full items-center mb-7">
+
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
